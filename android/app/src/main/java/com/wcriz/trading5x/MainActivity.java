@@ -11,7 +11,7 @@ public class MainActivity extends BridgeActivity {
     }
 
     @Override
-    protected void onResume() {
+    public void onResume() {
         super.onResume();
         WebView webView = getBridge().getWebView();
         webView.setOverScrollMode(WebView.OVER_SCROLL_ALWAYS);
