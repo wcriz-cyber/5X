@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "709395113005",
+    "project_id": "x-trading-94940",
+    "storage_bucket": "x-trading-94940.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709395113005:android:3c5d17782a6128e5bd44a4",
+        "android_client_info": {
+          "package_name": "com.wcriz.trading5x"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq2xpJw-UxwTL0deifvasHVXCpExG4uvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
