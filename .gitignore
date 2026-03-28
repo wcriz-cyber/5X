@@ -1,0 +1,53 @@
+# ══════════════════════════════════════════════
+#  5X TRADING — .gitignore
+# ══════════════════════════════════════════════
+
+# ── Secretos — NUNCA subir ──────────────────
+.env
+.env.local
+.env.production
+secrets.json
+api_keys.json
+
+# ── Generado automáticamente por CI/CD ──────
+# www/ es creado por el workflow build-apk.yml
+# (paso "Preparar assets web") — no versionar
+www/
+
+# ── Carpeta src/ — ELIMINADA ─────────────────
+# src/supabaseSync.js y src/hooks/useBotSync.js
+# usan ES modules + React hooks pero la app es
+# vanilla JS sin bundler. Nunca se importan.
+# Toda la lógica ya está inline en index.html.
+src/
+
+# ── Node / Capacitor ─────────────────────────
+node_modules/
+dist/
+.cache/
+.gradle/
+
+# ── Android — archivos de build locales ──────
+android/app/build/
+android/.gradle/
+android/local.properties
+*.apk
+*.aab
+
+# ── OS ───────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ── IDE ──────────────────────────────────────
+.vscode/
+.idea/
+
+# ── Backups / temporales ─────────────────────
+*.bak
+*.tmp
+
+# ── Logs ─────────────────────────────────────
+*.log
+npm-debug.log*
